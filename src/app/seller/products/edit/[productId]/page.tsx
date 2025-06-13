@@ -2,16 +2,15 @@ import React from 'react';
 import EditProductClientPage from '../../../../../components/products/EditProductClientPage'; 
 
 interface EditProductPageProps {
-  params: {
-    productId: string;
-  };
+  params: { productId: string }; 
 }
 
-const EditProductPage: React.FC<EditProductPageProps> = ({ params }) => {
+export default async function EditProductPage({ params }: EditProductPageProps) {
   const { productId } = params;
   return (
-    <EditProductClientPage productId={productId} />
+    <div>
+      <EditProductClientPage productId={productId} />
+    </div>
   );
 };
 
-export default EditProductPage;
