@@ -51,7 +51,7 @@ const CartItem: React.FC<CartItemProps> = ({ item, onUpdateQuantity, onRemoveIte
           <Typography variant="body1" sx={{ mx: 1 }}>
             {item.quantity}
           </Typography>
-          <IconButton size="small" onClick={handleIncreaseQuantity} disabled={item.quantity >= item.stock}>
+          <IconButton size="small" onClick={handleIncreaseQuantity} disabled={item.quantity >= item.quantity}>
             <AddIcon />
           </IconButton>
           <IconButton size="small" color="error" sx={{ ml: 2 }} onClick={handleRemoveItem}>

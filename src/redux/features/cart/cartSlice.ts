@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ShippingAddressDto } from '../../../services/orderService'; 
 
-interface CartItem {
+export interface CartItem {
   id: string;
   name: string;
   price: number;
